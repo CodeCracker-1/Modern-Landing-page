@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+   
+}
+
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#front{
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    /* background-color: rgba(95, 92, 92, 0); */
+   
+}
+
+#working-area{
+    position: relative;
+    margin: 0px auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+   
+}
+
+#nav{
+    width: 100%;
+    
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 60px;
+   
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nleft a {
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:  sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+
+}
+
+#nright a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:  sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+   
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
+
+#hero-left{
+    min-width: 50%;
+   
+}
+#hero-left .elem{
+
+    height: 9vw;
+    overflow: hidden; 
+    position: relative;
+}
+
+#hero-left .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: kajiro;
+    color: #ffffff;
+    font-weight: 100 ;
+    font-size: 11vw;
+
+}
+#hero-left .elem h1:nth-child(1){
+    top: 0;
+}
+
+#hero-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: white;
+    margin-top: 3vh;
+    /* background-color: rgb(16, 227, 143) */
+}
+
+#hero-left button{
+    pointer-events: all;
+    font-family: kajiro;
+    padding: .8vh 2vw;
+    margin-top: 2vh;
+    font-size: 2.8vw;
+    letter-spacing: 2px;
+
+}
+#hero-right p{
+    
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    font-style: italic;
+}
+
+
+#hero-right #image{
+  border-radius: 100px;
+  height: 80px;
+  width: 30%;
+  margin: 3vh 0vw 5vh 0vw;
+  background-image:url(img/social\ media\ logo.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;    
+}
+#hero-right :nth-child(3){
+    margin-bottom: 8vh;
+    color:white
+}
